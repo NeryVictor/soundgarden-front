@@ -64,7 +64,8 @@ listaEventos = async (evento) => {
     }
 
     
-    // O catch retorna uma excessao caso houver. Faz parte da declaração (try...catch)
+    // O catch retorna uma excessao caso houver. Faz parte da declaração (try...catch).
+    //  Irá retornar um (alert) para o usuario, caso os dados para os cards proximos eventos nao sejam recebidos.
     catch (erro) {
         console.log(erro);
         alert('Não foi possivel carregar os eventos!');
