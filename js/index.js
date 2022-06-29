@@ -1,19 +1,33 @@
+
+
 const eventos = document.querySelector('#eventos');
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get('id');
 
+// Função assíncrona que irá solicitar(GET) da API a lista de todos os eventos cadastrados.
 listaEventos = async (evento) => {
-    BASE_URL = "https://xp41-soundgarden-api.herokuapp.com";
+
+    // URL base para acessar a API
+    BASE_URL = "https://xp41-soundgarden-api.herokuapp.com"; 
+
+    // Declara o bloco com (try...catch) onde o try marca qual o bloco-função será testado.
+    // E o catch retorna uma excessao caso houver.
     try {
         var requestOptions = {
             method: 'GET',
             redirect: 'follow'
         };
+        // Declarando variavel que irá receber o objeto (function) assíncrono, através do método fetch. 
+        // Este irá listar através do endpoint base (URL) + diretorio especifico (events).
         const resposta = await fetch(`${BASE_URL}/events/`, requestOptions)
+
+        // Declarando variavel que irá receber uma resposta da API em formato json.
         const conteudo = await resposta.json();
         console.log(conteudo)
 
+        // Declarando variaveis que irão receber o método que irá criar novos elementos(articles).
         const evento1 = document.createElement('article');
+        // Adicionando atributos ao alemento (article).
         evento1.setAttribute('class', 'evento card p-5 m-3');
 
         const evento2 = document.createElement('article');
@@ -22,6 +36,9 @@ listaEventos = async (evento) => {
         const evento3 = document.createElement('article');
         evento3.setAttribute('class', 'evento card p-5 m-3');
 
+        // Atribui a propriedade que define através de uma sintaxe HTML os elementos descendentes (filhos). 
+        // Os elementos recebem uma varievel que possui como valor dados fornecidos pela API.
+        // Estes formam os elementos (articles) que representam os card dos proximos eventos.
         evento1.innerHTML = `
         <h2>${conteudo[0].name} - ${conteudo[0].scheduled}</h2>
         <h4>${conteudo[0].attractions}</h4>
@@ -45,11 +62,11 @@ listaEventos = async (evento) => {
         eventos.appendChild(evento3);
     }
 
-// Alerta de erro, api nao esta fornecendo os dados dos eventos!!!
-
-    // catch (erro) {
-    //     console.log(erro);
-    //     alert('Não foi possivel carregar os eventos!');
-    // }
+    
+    // O catch retorna uma excessao caso houver. Faz parte da declaração (try...catch)
+    catch (erro) {
+        console.log(erro);
+        alert('Não foi possivel carregar os eventos!');
+    }
 }
 listaEventos();
