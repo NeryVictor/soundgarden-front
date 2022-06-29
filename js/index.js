@@ -1,6 +1,7 @@
-
-
+// Declarando variavel que irá receber através do metodo (.querySelector) um elemento html por ID
 const eventos = document.querySelector('#eventos');
+
+// Declarando varivel (parametros) que ira retornar o primeiro valor associado ao (id)
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get('id');
 
