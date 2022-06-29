@@ -1,0 +1,12 @@
+/* O last-child é uma pseudo-classe. 
+Pode representa qualquer elemento, sendo ele o último filho de seu elemento pai. */
+
+td:last-child {
+    width: 18.5rem;
+  }
+    
+  /* #loading {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+  } */
