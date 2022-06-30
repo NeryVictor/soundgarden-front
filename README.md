@@ -19,6 +19,14 @@
  <a href="#Colaboradores">Colaboradores</a> •
 </p>
 
+## Recursos
+
+- [x] Cadastrar eventos
+- [x] Editar eventos
+- [x] Excluir eventos
+- [ ] Reservar ingresso via modal
+- [x] Listar reservas de ingressos
+
 ## 💻Tecnologias
 
 <p align="center">
@@ -34,6 +42,6 @@
 </p>
 
 ## 🤝 Colaboradores
-  <a href="https://github.com/" target="_blank">France Lima</a> |
-  <a href="https://github.com/" target="_blank">João Marcelo Dantas</a> |
+  <a href="https://github.com/FranceLima" target="_blank">France Lima</a> |
+  <a href="https://github.com/jmgrd98" target="_blank">João Marcelo Dantas</a> |
   <a href="https://github.com/NeryVictor" target="_blank">Victor Nery</a> |

@@ -1,4 +1,4 @@
-// Declarando variavel que irá receber através do metodo (.querySelector) um elemento html por ID
+// Declarando variavel (eventos) que irá receber através do metodo (.querySelector) um elemento html por ID (#)
 const eventos = document.querySelector('#eventos');
 
 // Declarando varivel (parametros) que ira retornar o primeiro valor associado ao (id).
