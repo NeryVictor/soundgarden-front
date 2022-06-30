@@ -12,7 +12,7 @@ listaEventos = async (evento) => {
         };
 
         // Declarando variavel que irá receber o objeto (function) assíncrono, através do método fetch. 
-        // Este irá listar através do endpoint base (URL) + diretorio especifico (events).
+        // Este irá listar através do endpoint base (BASE_URL) seguido do diretorio especifico (events).
         const resposta = await fetch(`${BASE_URL}/events/`, requestOptions)
 
         // Declarando variavel que irá receber uma resposta da API em formato json.
