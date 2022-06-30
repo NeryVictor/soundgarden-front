@@ -1,7 +1,7 @@
 // Declarando variavel que irá receber através do metodo (.querySelector) um elemento html por ID
 const eventos = document.querySelector('#eventos');
 
-// Declarando varivel (parametros) que ira retornar o primeiro valor associado ao (id)
+// Declarando varivel (parametros) que ira retornar o primeiro valor associado ao (id).
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get('id');
 
@@ -26,7 +26,7 @@ listaEventos = async (evento) => {
         const conteudo = await resposta.json();
         console.log(conteudo)
 
-        // Declarando variaveis que irão receber o método que irá criar novos elementos(articles).
+        // Declarando variaveis que irão receber o método (document.createElement) de criar novos elementos(articles).
         const evento1 = document.createElement('article');
         // Adicionando atributos ao alemento (article).
         evento1.setAttribute('class', 'evento card p-5 m-3');
@@ -37,9 +37,9 @@ listaEventos = async (evento) => {
         const evento3 = document.createElement('article');
         evento3.setAttribute('class', 'evento card p-5 m-3');
 
-        // Atribui a propriedade que define através de uma sintaxe HTML os elementos descendentes (filhos). 
+        // Atribui a propriedade que define através de uma sintaxe HTML os elementos filhos (h2, h4, p, a). 
         // Os elementos recebem uma varievel que possui como valor dados fornecidos pela API.
-        // Estes formam os elementos (articles) que representam os card dos proximos eventos.
+        // Estes exibem os cards dos (Próximos eventos), com seus respectivos dados (name, attractions, description)
         evento1.innerHTML = `
         <h2>${conteudo[0].name} - ${conteudo[0].scheduled}</h2>
         <h4>${conteudo[0].attractions}</h4>
@@ -65,10 +65,11 @@ listaEventos = async (evento) => {
 
     
     // O catch retorna uma excessao caso houver. Faz parte da declaração (try...catch).
-    //  Irá retornar um (alert) para o usuario, caso os dados para os cards proximos eventos nao sejam recebidos.
+    //  Irá retornar um (alert) para o usuario, caso os dados para os cards (Próximos eventos) nao sejam recebidos.
     catch (erro) {
         console.log(erro);
         alert('Não foi possivel carregar os eventos!');
     }
 }
+// Chamando a função (listaEventos) assíncrona criada.
 listaEventos();
