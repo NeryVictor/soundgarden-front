@@ -1,0 +1,154 @@
+.baner-opcional{
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#slider {
+    height: 48em;
+    width: 79%;
+    max-height: 20%;
+    height:30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-sizing: border-box;
+}
+
+#slider .img {
+    opacity: 0;
+    position: absolute;
+    width: 79%;
+    max-height: 98%;
+    object-fit: cover;
+    transition: opacity 800ms;
+    border-radius: 2rem;
+    min-width: 10rem;
+    height: 60rem;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+
+ #card-esoecial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+
+ .card-eventos{
+    margin-top:3rem;
+ }
+
+.col {
+    padding: 2rem;
+}
+@media only screen and (max-width: 320px){
+    .baner-opcional{
+      
+        min-height:2rem ;
+    }
+#slider{
+    height: 5rem;
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 420px){
+	/*Small smartphones [325px -> 425px]*/
+    .col {
+        padding: 1rem;
+        text-align: justify;
+    }
+    .btn-secondary{
+        margin-bottom: 30px;
+
+    }
+
+     .row {
+           
+            flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+
+  
+    #container-especial{
+
+        flex-direction: column;
+        
+       }
+       *, ::after, ::before {
+       
+       flex-wrap: wrap;
+    
+    }
+
+    
+#slider{
+    height: 10rem;
+    width: 100%;
+}
+    #slider .img {
+       
+border-radius: 0rem;
+       
+width: 100%;
+       
+height: 17rem;
+    }
+
+        .col {
+            align-items: center;
+             
+        }
+        .m-3 {
+            margin: 1rem!important;
+        }
+        .p-5 {
+            padding: 1rem!important;
+
+        }
+ }
+@media only screen and (max-width: 990px){
+    
+
+ 
+
+@media only screen and (max-width: 1024px){
+    
+     #card-esoecial{
+      
+        align-items: center;
+        margin-bottom: 5rem;
+      
+    
+     }
+    
+     .card-eventos{
+        margin-top:3rem;
+     }
+    .col {
+        padding: 2rem;
+    }
+    
+}
+
+}@media only screen and (max-width: 1440px){
+    #slider .img {
+        max-height: 23rem;
+       
+    }
+    #slider {
+        height: 25rem;
+    }
+}

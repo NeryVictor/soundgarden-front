@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+
   </head>
 
   <body>
@@ -23,13 +25,22 @@
         <img src="img/Sound-logo (1).png" width="300" alt="" />
       </a>
     </header>
-    <main>
-      <section class="full d-flex justify-content-center align-items-center"
+    <main>   
+      <section class="baner-opcional  " style="background-color: #B8184D; color: #555" id="baner">
+
+        <div id="slider">
+            <img class="img-fluid img" class="selected" src="./img/Sound-banner.png" alt="Image1">
+            <img class="img-fluid img" src="./img/Sound-banner (2).png" alt="Image2">
+            <img class="img-fluid img" src="./img/Sound-banner.png" alt="Image3">
+        </div>
+
+    </section>
+      <!-- <section class="full d-flex justify-content-center align-items-center"
             style="background-color: #B8184D; color: #fff">
             <div class="text-center">
                 <h1>Adicione um banner maneiro aqui</h1>
             </div>
-        </section>
+        </section> -->
       <section>
         <form id="botoes-banner" name="form" style="display:none;">
           <input type=text name="texto">
@@ -154,6 +165,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/banner.js" ></script>
   </body>
 </html>
 
