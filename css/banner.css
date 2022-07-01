@@ -145,7 +145,8 @@ height: 17rem;
 
 }@media only screen and (max-width: 1440px){
     #slider .img {
-        max-height: 23rem;
+        max-height: 24.5rem;
+        max-width: 55rem;
        
     }
     #slider {
