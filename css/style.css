@@ -30,8 +30,8 @@ aside {
     /* margin-top: 1.5rem; */
     color: #fff;
     font-weight: bold;
-    background-color: #B8184D;
-    border-color: #6B2E42;
+    background-color: #EB1E63;
+    border-color: #EB1E63;
 }
 
 main.login {
@@ -97,9 +97,8 @@ article.evento{
     transition: 1s;
 }
 
-
 article.evento:hover {
-    transform: translate3d(4px, -4px, 0);
-    box-shadow: -3px 3px 3px 3px #EB1E63;
+    transform: translate3d(4px, 4px, 0);
+    box-shadow: 3px 3px 3px 3px #EB1E63;
     transition: 0.5s;
 }

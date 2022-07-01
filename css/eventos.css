@@ -1,0 +1,11 @@
+.btn-secondary{
+    margin-top: 1.5rem;
+    font-weight: bold;
+   
+}
+
+.div_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

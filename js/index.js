@@ -44,19 +44,19 @@ listaEventos = async (evento) => {
         <h2>${conteudo[0].name} - ${conteudo[0].scheduled}</h2>
         <h4>${conteudo[0].attractions}</h4>
         <p>${conteudo[0].description}</p>
-        <a href="./reservar-ingresso.html?id=${conteudo[0]._id}" class="btn btn-primary">reservar ingresso</a>`
+        <a href="./ingresso.html?id=${conteudo[0]._id}" class="btn btn-primary">reservar ingresso</a>`
 
         evento2.innerHTML = `
         <h2>${conteudo[1].name} - ${conteudo[1].scheduled}</h2>
         <h4>${conteudo[1].attractions}</h4>
         <p>${conteudo[1].description}</p>
-        <a href="./reservar-ingresso.html?id=${conteudo[1]._id}" class="btn btn-primary">reservar ingresso</a>`
+        <a href="./ingresso.html?id=${conteudo[1]._id}" class="btn btn-primary">reservar ingresso</a>`
 
         evento3.innerHTML = `
         <h2>${conteudo[2].name} - ${conteudo[2].scheduled}</h2>
         <h4>${conteudo[2].attractions}</h4>
         <p>${conteudo[2].description}</p>
-        <a href="./reservar-ingresso.html?id=${conteudo[2]._id}" class="btn btn-primary">reservar ingresso</a>`
+        <a href="./ingresso.html?id=${conteudo[2]._id}" class="btn btn-primary">reservar ingresso</a>`
 
         eventos.appendChild(evento1);
         eventos.appendChild(evento2);
@@ -73,3 +73,4 @@ listaEventos = async (evento) => {
 }
 // Chamando a função (listaEventos) assíncrona criada.
 listaEventos();
+
